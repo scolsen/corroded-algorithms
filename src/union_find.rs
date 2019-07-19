@@ -2,12 +2,7 @@
 /// The quick-find algorithm.
 pub fn quick_find(p: usize, q: usize) -> (i32, i32){
   // Initialize a vector of integers of a fixed size.
-  let mut id: Vec<i32> = vec![0; 10000];
-  
-  // Loop over each element of the array, setting it equivalent to its index.
-  for n in 0..10000 {
-    id[n] = n as i32; 
-  }
+  let mut id: Vec<i32> = (0..10000).collect();
   
   let result = loop {
     
